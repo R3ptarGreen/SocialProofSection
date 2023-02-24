@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    height: 100vh;
+    font-size: 15px;
+    font-family: 'league spartan';
+    margin: auto;
+}
+.bg{
+    position: absolute;
+}
+.buttom{
+    left: 700px;
+    top: 200px;
+}
+.container{
+    margin: auto;
+    margin-top: 15vh;
+    width: 1000px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "header header header"
+                         "profile profile profile";
+}
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "title rate";
+}
+.title{
+    padding-top: 6rem;
+    width: 80%;
+    padding-left: 1.5rem;
+}
+.title h1{
+    font-weight: 700;
+    font-size: 3rem;
+    width: 90%;
+    padding-top: 3rem;
+    color: hsl(300, 43%, 22%);
+}
+.title p{
+    padding-top: 1rem;
+    width: 380px;
+    color: hsl(303, 10%, 53%);
+}
+.rate{
+    padding-right: 1.5rem;
+    padding-top: 4rem;
+    grid-area: rate;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: "empty"
+                         "reviews"
+                         "report"
+                         "tech";
+    align-items: center;
+}
+.reviews{
+    grid-area: reviews;
+    align-items: center;
+    height: 45px;
+    width: 380px;
+    display: grid;
+    grid-template-columns: 35% auto;
+    margin-left: 2rem;
+    margin-right: 6rem;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 500;
+}
+.report{
+    grid-area: report;
+    align-items: center;
+    height: 45px;
+    width: 380px;
+    display: grid;
+    grid-template-columns: 35% auto;
+    margin-left: 4rem;
+    margin-right: 2rem;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 500;
+}
+.tech{
+    grid-area: tech;
+    align-items: center;
+    height: 45px;
+    width: 380px;
+    display: grid;
+    grid-template-columns: 35% auto;
+    margin-left: 6rem;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 500;
+}
+.stars{
+    padding-left: 1rem;
+}
+
+.profile{
+    grid-area: profile;
+    display: grid;
+    grid-template-areas: "colton irene anne";
+    width: 100%;
+    justify-content: space-around;
+}
+.colton{
+    width: 280px;
+    height: 50%;
+    grid-area: colton;
+    margin-top: 2rem;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    display: grid;
+    grid-template-areas: "col_info"
+                        "colt_article";
+}
+.colton_info{
+    grid-area: col_info;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "1fr 2fr 3fr 4fr"
+                         "col_img col_name col_name 8fr"
+                         "col_img verified verified 12fr"
+                         "13fr 14fr 15fr 16fr";
+}
+.colton_img{
+    grid-area: col_img;
+    border-radius: 50%;
+    width: 50px;
+}
+.colton_info p{
+    grid-area: col_name;
+    align-self: end;
+}
+.colton_info span{
+    grid-area: verified;
+    color: hsl(333, 80%, 67%);
+}
+.colton_article{
+    text-align: center;
+}
+.irene{
+    width: 280px;
+    height: 50%;
+    grid-area: irene;
+    margin-top: 3rem;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    display: grid;
+    grid-template-areas: "irene_info"
+                        "irene_article";
+}
+.irene_info{
+    grid-area: irene_info;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "1fr 2fr 3fr 4fr"
+                         "irene_img irene_name irene_name 8fr"
+                         "irene_img verified verified 12fr"
+                         "13fr 14fr 15fr 16fr";
+}
+.irene img{
+    grid-area: irene_img;
+    border-radius: 50%;
+    width: 50px;
+}
+.irene_info p{
+    grid-area: irene_name;
+    align-self: end;
+}
+.irene_info span{
+    grid-area: verified;
+    color: hsl(333, 80%, 67%);
+}
+.irene_article{
+    text-align: center;
+}
+.anne{
+    width: 280px;
+    height: 50%;
+    grid-area: anne;
+    margin-top: 3rem;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    display: grid;
+    grid-template-areas: "anne_info"
+                        "anne_article";
+}
+.anne_info{
+    grid-area: anne_info;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "1fr 2fr 3fr 4fr"
+                         "anne_img anne_name anne_name 8fr"
+                         "anne_img verified verified 12fr"
+                         "13fr 14fr 15fr 16fr";
+}
+.anne img{
+    grid-area: anne_img;
+    border-radius: 50%;
+    width: 50px;
+}
+.anne_info p{
+    grid-area: anne_name;
+    align-self: end;
+}
+.anne_info span{
+    grid-area: verified;
+    color: hsl(333, 80%, 67%);
+}
+.anne_article{
+    text-align: center;
+}
+
+
+
+.anne{
+    width: 280px;
+    height: 50%;
+    grid-area: anne;
+    margin-top: 4rem;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    color: white;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media (max-width: 1000px){
+    .container{
+        margin: auto;
+        margin-top: 5vh;
+        width: 700px;
+        height: 800px;
+    }   
+    .title h1{
+        font-weight: 700;
+        font-size: 2rem;
+        width: 90%;
+        padding-top: 3em;
+        color: hsl(300, 43%, 22%);
+    }
+    .colton, .anne, .irene{
+        width: 220px;
+    }
+    .reviews, .tech, .report{
+        width: 250px;
+    }
+ }
+@media (max-width: 700px){
+    
+    .container{
+        margin: auto;
+        margin-top: 10vh;
+        width: 350px;
+        height: 1400px;
+        display: grid;
+        grid-template-rows: 35% 65%;
+        grid-template-areas: "header"
+                             "profile";
+    }
+    .header{
+        width: 22rem;
+        grid-area: header;
+        display: grid;
+        padding: 0;
+        grid-template-rows: 40% 60%;
+        grid-template-areas: "title"
+                             "rate";                
+    }
+    .title{
+        width: 22rem;
+        grid-area: title;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-areas: "h1"
+                             "p";
+    }
+    .title h1{
+        padding: 0;
+        margin: 0;
+        padding-top: 0;
+        grid-area: h1;
+        font-size: 2em;
+        width: 13rem;
+        align-items: center;
+        text-align: center;
+        justify-self: center;
+    }
+    .title p{
+        width: 22rem;
+        text-align: center;
+    }
+    .rate{
+        width: 22rem;
+        grid-area: rate;
+        padding: 1rem;
+        margin-top: 1rem;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas: "reviews"
+                             "report"
+                             "tech";
+    }
+    .reviews{
+        display: block;
+        grid-area: reviews;
+        width: 100%;
+        height: 4rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 1rem;
+    }
+    .report{
+        display: block;
+        grid-area: report;
+        width: 100%;
+        height: 4rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 1rem;
+    }
+    .tech{
+        display: block;
+        grid-area: tech;
+        width: 100%;
+        height: 4rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 1rem;
+    }
+    .profile{
+        grid-area: profile;
+        display: grid;
+        grid-template-rows: 29% 29% 29% 10%;
+        grid-template-areas: "colton"
+                             "irene"
+                             "anne"
+                             "empty";
+        width: 22rem;
+    }
+    .colton{
+        grid-area: colton;
+        padding-top: 2rem;
+    }
+    .irene{
+        grid-area: irene;
+        padding-top: 2rem;
+
+    }
+    .anne{
+        grid-area: anne;
+        padding-top: 2rem;
+
+    }
+    .colton, .irene, .anne{
+        width: 20rem;
+        margin-top: 0;
+        height: 15rem;
+    }
+    .colton p, .irene p, .anne p{
+        text-align: start;
+    }
+}

@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Social proof section](https://legendary-liger-b6e161.netlify.app/)
 
 ## My process
 
